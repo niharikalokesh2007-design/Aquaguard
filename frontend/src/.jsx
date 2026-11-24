@@ -15,7 +15,7 @@ import {
 } from "recharts";
 import jsPDF from "jspdf";
 
-const API_URL = "http://localhost:5000/api/sensors";
+const API_URL = "https://aquaguard-backend-dg5j.onrender.com/api/sensors";
 
 const THRESHOLDS = {
   ph: { min: 6.5, max: 8.5 },
@@ -312,7 +312,7 @@ function App() {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("https://aquaguard-backend-dg5j.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
